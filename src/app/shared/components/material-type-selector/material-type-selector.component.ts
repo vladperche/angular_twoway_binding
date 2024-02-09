@@ -14,7 +14,7 @@ export class MaterialTypeSelectorComponent {
   @Output()
   valueChange = new EventEmitter<string>();
 
-  onValueChage(event:MatSelectChange){
+  onSelectValue(event:MatSelectChange){
     this.valueChange.emit(event.value);
   }
 }

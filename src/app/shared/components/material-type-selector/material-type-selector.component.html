@@ -1,6 +1,6 @@
 <mat-form-field>
     <mat-label>Tipo de material</mat-label>
-    <mat-select (selectionChange)="onValueChage($event)">
+    <mat-select (selectionChange)="onSelectValue($event)" [value]="value">
         <mat-option value="HAWA">Matéria Prima</mat-option>
         <mat-option value="WIP">Semi-Acabado</mat-option>
         <mat-option value="PROD">Produção própria</mat-option>
